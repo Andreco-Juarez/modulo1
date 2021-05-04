@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Facil:
+            <ul>
+                <li>1 barco de 3 casillas</li>
+                <li>Un tablero de 8x8</li>
+                <li>10 vidas</li>
+            </ul>
+        </li>
+        <li>Normal:
+            <ul>
+                <li>2 barcos: uno de 3 casillas y otro de 4 casillas</li>
+                <li>Un tablero de 10x10</li>
+                <li>8 vidas</li>
+            </ul>
+        </li>
+        <li>Dificil:
+            <ul>
+                <li>3 Barcos :dos de 3 de longitud y otro de 4 de longitud</li>
+                <li>Un tablero de 13x13</li>
+                <li>9 vidas</li>
+            </ul>
+        </li>
+    </ul>
+    <br><br>
+    <form method="POST" action="./actividad13.php">
+        <legend>¿Que dificultad quieres jugar?</legend>
+        <label>Dificultad
+            <select name="dificultad">
+                <option value="F">Facil</option>
+                <option value="N">Normal</option>
+                <option value="D">Dificil</option>
+            </select>
+        </label>
+        <input type="hidden" name="posicionX" value="0"></input>
+        <input type="hidden" name="posicionY" value="0"></input>
+        <input type="hidden" name="turnos" value=0></input>
+        <input type="hidden" name="casilla0" value=0></input>
+        <input type="hidden" name="numBarcos" value=0></input>
+        <input type="hidden" name="barcos00" value=0></input>
+        <input type="hidden" name="spawnBarco" value=0></input>
+        <button type="submit">Jugar</button>
+    </form>
+    <p>Juego hecho por <i>Vazquez Castillo Mariela Eunice</i> y por <i>Juarez Salgado Eduardo Andreco</i></p>
+</body>
+</html>
