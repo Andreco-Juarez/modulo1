@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td align="justify">
+                    <form method="POST" action="./hora.php">
+                        <legend>Reloj mundial</legend>
+                        <fieldset>
+                            <Label>Ingrese hora(CDMX)
+                                <input type="time" name="hora">
+                            </Label>
+                            <br><br>
+                            <label>Elige los paises que quieres consultar:
+                                <br><br>
+                                Nueva York:<input type="checkbox" name="pais[]" value="NY">
+                                Madrid:<input type="checkbox" name="pais[]" value="M">
+                                <br>
+                                Roma:<input type="checkbox" name="pais[]" value="R">
+                                Bejin:<input type="checkbox" name="pais[]" value="B">
+                                <br>
+                                Sao Paulo:<input type="checkbox" name="pais[]" value="SP">
+                                Paris:<input type="checkbox" name="pais[]" value="P">
+                                <br>
+                                Atenas:<input type="checkbox" name="pais[]" value="A">
+                                Tokio:<input type="checkbox" name="pais[]" value="T">
+                                <br>
+                            </label>
+                            <input type="hidden" name="opcion" value="R">
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </Form>
+                </td>
+                <td>
+                    <form method="POST" action="./actividad14.php">
+                        <legend>Calcula Cumpleaños</legend>
+                        <fieldset>
+                            <label>Ingrese su fecha de nacimiento
+                                <input type="date" name="cumpleaños">
+                            </label>
+                            <br><br>
+                            <label>¿Que quieres consultar?
+                                <br><br>
+                                Dias para su proximo cumpleaños<input type="checkbox" name="formato[]" value="Dias">
+                                <br>
+                                Horas para su proximo cumpleaños<input type="checkbox" name="formato[]" value="Horas">
+                                <br>
+                                Minutos para su proximo cumpleaños<input type="checkbox" name="formato[]" value="Minutos">
+                                <br>
+                                ¿sera en fin de semana?<input type="checkbox" name="formato[]" value="weekend">
+                                <input type="hidden" name="opcion" value="N">
+                                <button type="submit">Enviar</button>
+                            </label>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
